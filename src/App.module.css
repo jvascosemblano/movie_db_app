@@ -1,0 +1,42 @@
+.searchBar {
+  display: flex;
+  margin: 50px auto 50px auto;
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 25px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 20px;
+}
+
+.movieGrid {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.movieItem {
+  margin-right: 30px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.movieItem:hover {
+  transform: scale(1.1);
+}
+
+.movieImage {
+  border-radius: 25px;
+  box-shadow: 5px 10px 8px #333333;
+}
