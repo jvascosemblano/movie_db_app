@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import styles from "./App.module.css";
+import MovieList from "./components/MovieList";
 import { getMovies } from "./services/api";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       if (query !== "") {
         fetchData().then((data) => setMovieList(() => data.results));
       }
-    }, 1000);
+    }, 500);
 
     return () => clearTimeout(delay);
   }, [query]);
@@ -45,21 +45,7 @@ function App() {
           Search and movies will show up here
         </div>
       ) : (
-        <div className={styles.movieGrid}>
-          {movieList.map((movie, index) => (
-            <Link to={`movies/${movie.id}`}>
-              <div className={styles.movieItem}>
-                <img
-                  className={styles.movieImage}
-                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                  alt={index}
-                  width="200px"
-                />
-                <p>{movie.original_title}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <MovieList movieList={movieList} />
       )}
     </>
   );

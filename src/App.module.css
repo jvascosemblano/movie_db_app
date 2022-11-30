@@ -32,11 +32,64 @@
   transition: transform 0.2s;
 }
 
+.movieLink {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .movieItem:hover {
   transform: scale(1.1);
 }
 
 .movieImage {
+  width: 200px;
   border-radius: 25px;
   box-shadow: 5px 10px 8px #333333;
+}
+
+.movieProfile {
+  margin-top: 40px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  max-width: 300px;
+}
+
+.movieProfileGrid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 1fr 200px;
+}
+
+.backdropImage {
+  width: 300px;
+  border-radius: 25px;
+  box-shadow: 15px 10px 16px #333333;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+  aspect-ratio: auto;
+}
+
+.backdropImage:hover {
+  box-shadow: 15px 10px 16px #176bca;
+}
+
+.movieName {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: "Aclonica";
+}
+
+.movieDescription {
+  margin-top: 10px;
+  margin-left: 45px;
+  width: 500px;
+  text-align: justify;
+}
+
+.movieInfo {
+  margin-top: 40px;
 }
