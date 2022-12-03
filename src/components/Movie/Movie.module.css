@@ -4,7 +4,7 @@
   margin: 0 auto;
   text-align: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .movieItem {
@@ -82,4 +82,26 @@
 .movieVignette {
   display: flex;
   flex-direction: column;
+}
+
+.pageSelectors {
+  height: 50px;
+  width: 80%;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Aclonica";
+}
+
+.pageArrow {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 100px;
+  padding: 5px;
+}
+
+.pageArrow:hover {
+  background-color: white;
+  border-radius: 5px;
 }
