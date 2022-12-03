@@ -63,6 +63,7 @@ Your browser should open up to a running app.
 | :-------- | :------- | :-------------------------- |
 | `api_key` | `string` | **Mandatory** - API key     |
 | `query`   | `string` | **Mandatory** - Search term |
+| `page`    | `integer`| **Optional** - Page         |
 
 #### Returns information about a specific movie
 
